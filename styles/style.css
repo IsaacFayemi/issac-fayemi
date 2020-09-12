@@ -92,13 +92,13 @@ h2.title {
 #socials {
      width: 743px;
      padding: 3rem;
-     outline: 2px solid #000000;
+     outline: 2.5px solid #000000;
 }
 
 #projects,
 #contact {
      width: 377px;
-     outline: 2px solid #000000;
+     outline: 2.5px solid #000000;
 }
 
 /* ===================================== */
