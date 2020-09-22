@@ -201,7 +201,6 @@ h1 b {
      display: flex;
      align-items: center;
      flex-wrap: wrap;
-     /* padding: 2.125rem 3rem; */
      padding: 0.5rem 3rem;
 }
 
@@ -250,7 +249,7 @@ h1 b {
      display: flex;
      align-items: center;
      justify-content: space-between;
-     padding: 2.125rem 2.25rem;
+     padding: 1.6rem 2.25rem;
 }
 
 #contact:hover {
