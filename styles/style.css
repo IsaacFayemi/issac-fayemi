@@ -1,53 +1,44 @@
-/* /* @font-face {
-     font-family: "Airbnb Cereal";
-     src: url("/assets/fonts/AirbnbCerealBook.ttf");
-     font-weight: normal;
-     font-style: normal;
-} */
-
 @font-face {
-     font-family: "Airbnb Cereal";
-     src: url("assets/fonts/AirbnbCerealMedium.ttf");
-     font-weight: 500;
+     font-family: "SpaceGrotesk-Medium";
      font-style: normal;
+     font-weight: normal;
+     src: url("../assets/fonts/SpaceGrotesk-Medium.ttf");
 }
 
-
-
-/* @font-face {
-     font-family: "Airbnb";
-     font-style: normal;
-     font-weight: 400;
-     src: url("/assets/fonts/AirbnbCerealBook.woff") format("woff");
-} */
-
-/* @font-face {
-     font-family: "Airbnb";
-     font-style: normal;
-     font-weight: normal;
-     src: url("/assets/fonts/AirbnbCerealLight.woff") format("woff");
-} */
-
 @font-face {
-     font-family: "Airbnb";
+     font-family: "SpaceGrotesk-Regular";
      font-style: normal;
      font-weight: normal;
-     src: url("../assets/fonts/AirbnbCerealMedium.woff") format("woff");
+     src: url("../assets/fonts/SpaceGrotesk-Regular.ttf");
 }
 
-/* @font-face {
-     font-family: "Airbnb";
+@font-face {
+     font-family: "SpaceGrotesk-Light";
      font-style: normal;
-     font-weight: 600;
-     src: url("/assets/fonts/AirbnbCerealBold.woff") format("woff");
-} */
+     font-weight: normal;
+     src: url("../assets/fonts/SpaceGrotesk-Light.ttf");
+}
+
+@font-face {
+     font-family: "SpaceGrotesk-SemiBold";
+     font-style: normal;
+     font-weight: normal;
+     src: url("../assets/fonts/SpaceGrotesk-SemiBold.ttf");
+}
+
+@font-face {
+     font-family: "SpaceGrotesk-Bold";
+     font-style: normal;
+     font-weight: normal;
+     src: url("../assets/fonts/SpaceGrotesk-Bold.ttf");
+}
 
 * {
      border: 0;
      margin: 0;
      padding: 0;
      box-sizing: border-box;
-     font-family: "Airbnb", sans-serif;
+     font-family: "SpaceGrotesk-Regular", sans-serif;
      outline: none;
      /* outline: 2px pink solid; */
 }
@@ -84,10 +75,6 @@ a {
      color: black;
 }
 
-a:hover {
-     text-decoration: underline;
-}
-
 .container {
      width: 1120px;
 }
@@ -113,9 +100,10 @@ main::before {
 }
 
 h2.title {
-     font-weight: 500;
+     font-family: "SpaceGrotesk-Medium", sans-serif;
      font-size: 21px;
      line-height: 25px;
+     font-weight: normal;
 }
 
 #bio,
@@ -153,9 +141,13 @@ h2.title {
 
 h1 {
      margin-top: 0.5rem;
-     font-weight: 500;
      font-size: 32px;
      line-height: 38px;
+     font-weight: normal;
+}
+
+h1 b {
+     font-family: "SpaceGrotesk-Bold", sans-serif;
 }
 
 .prof {
@@ -178,11 +170,28 @@ h1 {
 }
 
 .all-projects h3 {
+     position: relative;
+     display: inline-block;
      margin-bottom: 1rem;
-     font-weight: 500;
+     font-family: "SpaceGrotesk-SemiBold", sans-serif;
      font-size: 32px;
      line-height: 38px;
 }
+
+.all-projects h3::before{
+     content: "";
+     position: absolute;
+     bottom: 0;
+     height: 4px;
+     width: 0%;
+     background: linear-gradient(270deg, #ff3f15 0%, #ff15bd 100%);
+     transition: 0.3s ease-in-out;
+}
+
+.all-projects h3:hover::before{
+     width: 100%;
+}
+
 
 /* ===================================== */
 /* Socials                               */
@@ -215,7 +224,7 @@ h1 {
      overflow: hidden;
 }
 
-.media-icons a:hover{
+.media-icons a:hover {
      background: linear-gradient(270deg, #ff3f15 0%, #ff15bd 100%);
 }
 
@@ -227,7 +236,7 @@ h1 {
      fill: black;
 }
 
-.media-icons a:hover svg{
+.media-icons a:hover svg {
      fill: white;
 }
 
@@ -241,10 +250,15 @@ h1 {
      display: flex;
      align-items: center;
      justify-content: space-between;
-     padding: 2.125rem 3rem;
+     padding: 2.125rem 2.25rem;
+}
+
+#contact:hover {
+     background: linear-gradient(270deg, #ff3f15 0%, #ff15bd 100%);
 }
 
 .credit {
+     font-family: "SpaceGrotesk-Light", sans-serif;
      font-size: 0.875rem;
      margin-top: 1.5rem;
 }
