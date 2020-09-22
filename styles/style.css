@@ -253,6 +253,8 @@ h1 b {
 
 #contact:hover {
      background: linear-gradient(270deg, #ff3f15 0%, #ff15bd 100%);
+     border-top: 2px solid black;
+     border-left: 2px solid black;
 }
 
 .credit {
