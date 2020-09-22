@@ -1,9 +1,9 @@
-@font-face {
+/* /* @font-face {
      font-family: "Airbnb Cereal";
      src: url("/assets/fonts/AirbnbCerealBook.ttf");
      font-weight: normal;
      font-style: normal;
-}
+} */
 
 @font-face {
      font-family: "Airbnb Cereal";
@@ -12,12 +12,42 @@
      font-style: normal;
 }
 
+
+
+/* @font-face {
+     font-family: "Airbnb";
+     font-style: normal;
+     font-weight: 400;
+     src: url("/assets/fonts/AirbnbCerealBook.woff") format("woff");
+} */
+
+/* @font-face {
+     font-family: "Airbnb";
+     font-style: normal;
+     font-weight: normal;
+     src: url("/assets/fonts/AirbnbCerealLight.woff") format("woff");
+} */
+
+@font-face {
+     font-family: "Airbnb";
+     font-style: normal;
+     font-weight: normal;
+     src: url("/assets/fonts/AirbnbCerealMedium.woff") format("woff");
+}
+
+/* @font-face {
+     font-family: "Airbnb";
+     font-style: normal;
+     font-weight: 600;
+     src: url("/assets/fonts/AirbnbCerealBold.woff") format("woff");
+} */
+
 * {
      border: 0;
      margin: 0;
      padding: 0;
      box-sizing: border-box;
-     font-family: "Airbnb Cereal", sans-serif;
+     font-family: "Airbnb", sans-serif;
      outline: none;
      /* outline: 2px pink solid; */
 }
