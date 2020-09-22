@@ -178,7 +178,7 @@ h1 b {
      line-height: 38px;
 }
 
-.all-projects h3::before{
+.all-projects h3::before {
      content: "";
      position: absolute;
      bottom: 0;
@@ -188,10 +188,9 @@ h1 b {
      transition: 0.3s ease-in-out;
 }
 
-.all-projects h3:hover::before{
+.all-projects h3:hover::before {
      width: 100%;
 }
-
 
 /* ===================================== */
 /* Socials                               */
@@ -315,6 +314,10 @@ h1 b {
 
      #socials h2 {
           margin-bottom: 2rem;
+     }
+
+     .contact-link {
+          width: 100%;
      }
 
      #contact {
