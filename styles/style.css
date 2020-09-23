@@ -266,7 +266,7 @@ h1 b {
 /* Media Query                           */
 /* ===================================== */
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1120px) {
      body {
           background-color: #ffffff;
           width: 100vw;
